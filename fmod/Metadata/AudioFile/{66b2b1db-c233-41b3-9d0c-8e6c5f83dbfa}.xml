@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{66b2b1db-c233-41b3-9d0c-8e6c5f83dbfa}">
+		<property name="assetPath">
+			<value>sfx/sounds/stone/land_stone3.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.49437500000000001</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{235186b0-c601-4c4a-a7c7-28d1203184a8}</destination>
+		</relationship>
+	</object>
+</objects>
