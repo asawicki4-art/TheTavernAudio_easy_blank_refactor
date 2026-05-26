@@ -15,10 +15,10 @@ MonoBehaviour:
   Path: fmod/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639142107511595684
+  lastModified: 639154202626855440
   FileSizes:
   - Name: Desktop
-    Value: 4431904
+    Value: 4434208
   Exists: 1
 --- !u!114 &-7579899478314844633
 MonoBehaviour:
@@ -47,6 +47,32 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 100000
+--- !u!114 &-5026786400192655934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/doors/Doors
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorParamRef
+  Name: Doors
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 1948199395
+    data2: 1292784921
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Open
+  - Close
+  Exists: 1
 --- !u!114 &-472037100832261326
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -98,13 +124,14 @@ MonoBehaviour:
   - {fileID: -7579899478314844633}
   - {fileID: 6647912778353792464}
   - {fileID: 4192641004138509649}
+  - {fileID: 37325131699504085}
   EditorParameters: []
   MasterBanks:
   - {fileID: -8144785226753654444}
   StringsBanks:
   - {fileID: 8810508389598222915}
   cacheVersion: 131859
-  cacheTime: 639142107511615659
+  cacheTime: 639154202626870491
   SerializableEventsDict:
   - key: event:/door_open
     index: 0
@@ -122,6 +149,36 @@ MonoBehaviour:
     index: 6
   - key: snapshot:/outside
     index: 7
+  - key: event:/doors
+    index: 8
+--- !u!114 &37325131699504085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/doors
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/doors
+  Guid:
+    Data1: 1824080113
+    Data2: 1159464081
+    Data3: -1901926988
+    Data4: -1638662497
+  Banks:
+  - {fileID: -8144785226753654444}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -5026786400192655934}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1410
 --- !u!114 &217463920843977282
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -299,10 +356,10 @@ MonoBehaviour:
   Path: fmod/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639142107511615659
+  lastModified: 639154202626870491
   FileSizes:
   - Name: Desktop
-    Value: 1252
+    Value: 1526
   Exists: 1
 --- !u!114 &9219508584183241278
 MonoBehaviour:
